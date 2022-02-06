@@ -1,0 +1,30 @@
+/* Libs */
+@import "./../../node_modules/swiper/swiper";
+
+/* Base */
+@import "base/var";
+@import "base/mixin";
+@import "base/fonts";
+@import "base/global";
+
+/* Partials */
+@import "partials/button";
+@import "partials/field";
+@import "partials/checkbox";
+@import "partials/indicator";
+@import "partials/lang-switcher";
+@import "partials/menu";
+@import "partials/title-block";
+@import "partials/header";
+@import "partials/footer";
+
+/* Blocks */
+@import "blocks/form";
+@import "blocks/search-block";
+@import "blocks/first-screen";
+@import "blocks/brands";
+@import "blocks/account";
+@import "blocks/advantages-section";
+@import "blocks/awards";
+@import "blocks/awards-card";
+@import "blocks/license";

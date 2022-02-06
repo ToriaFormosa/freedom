@@ -1,0 +1,66 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Freedom24 | Main'
+		};
+
+block main
+	include ../blocks/first-screen.pug
+	include ../blocks/brands.pug
+	include ../blocks/account.pug
+	+advantages-section('advantages-section--ipo',
+		'<span class="swap-1">Участвуйте</span> <span class="swap-2">Инвестируйте</span> в IPO',
+		'<span class="swap-1">Инвестируйте в <a href="#" target="_blank">первичное размещение акций</a> (IPO)' +
+			'американских и европейских компаний. Средняя доходность на инвестиции — 70% за 93 дня.</span>' +
+			'<span class="swap-2">Покупайте акции по первичной цене до начала торгов. Зарабатывайте на их продаже после листинга' +
+			'на бирже и истечения периода Lock UP — цена может вырасти на десятки и даже сотни процентов!</span>',
+		{
+			text: "Подробнее о IPO",
+			class: "",
+			url: "#"
+		},
+		'3',
+		[
+			{
+				num: "206",
+				text: "Всего размещений"
+			},
+			{
+				num: "71.26%",
+				text: "Средняя прибыль за 3 месяца"
+			}
+		])
+	+advantages-section('advantages-section--invest',
+		'Инвестируйте в акции и ETF. <br class="desk"> <span>Бесплатно.</span>',
+		'Совершайте торговые операции с 40 000<span class="swap-1">+</span> ценных бумаг на крупнейших биржах Америки, Европы и Азии. ' +
+		'Без комиссии, абонентской платы и скрытых платежей.',
+		{
+			text: "<span class='swap-1'>Подробнее</span> <span class='swap-2'>Перейти в каталог</span>",
+			url: "#"
+		},
+		'4')
+	+advantages-section('advantages-section--deposit',
+		'Депозитный счёт. <br> <span>Доход больше, чем в банке.</span>',
+		'<span class="swap-1">Храните доллары под 3% годовых на накопительном <br> D-счете. Доходность начисляется ежедневно.</span>' +
+			'<span class="swap-2">При регистрации, помимо инвестиционного счета, вам откроется специальный накопительный D-счет, ' +
+			'на который мы будем начислять вам 3% годовых в USD ежедневно.</span>',
+		{
+			text: "Подробнее о D-счёте",
+			url: "#"
+		},
+		'5')
+	+advantages-section('advantages-section--app',
+		'Предложение для эффективных коммуникаторов',
+		'Нравится Freedom24? Приглашайте друзей и подписчиков и получайте вознаграждение за их торговую активность. ' +
+		'Ваша партнерская программа активируется сразу после открытия счета!',
+		{
+			text: "Открыть счёт",
+			url: "#"
+		},
+		'6')
+	include ../blocks/awards.pug
+	include ../blocks/license.pug
+	include ../blocks/form.pug
+

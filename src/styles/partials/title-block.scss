@@ -1,0 +1,44 @@
+.title-block {
+	h2 {
+		font-size: 60px;
+		line-height: 72px;
+		font-weight: 400;
+		margin-bottom: 40px;
+
+		@include max(md) {
+			font-size: 30px;
+			line-height: 36px;
+			margin-bottom: 20px;
+		}
+
+		span {
+			color: $parakeet;
+		}
+	}
+
+	p {
+		font-size: 24px;
+		line-height: 28px;
+
+		@include max(md) {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		a {
+			color: $light-green;
+		}
+	}
+
+	&--text-spacing {
+		p {
+			font-size: 26px;
+			line-height: 48px;
+
+			@include max(md) {
+				font-size: 14px;
+				line-height: 31px;
+			}
+		}
+	}
+}

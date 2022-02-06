@@ -1,0 +1,5 @@
+mixin checkbox(fieldName, className, text)
+	label.checkbox(class=className)
+		input(type='checkbox', name=fieldName)&attributes(attributes)
+		b
+		span!= text

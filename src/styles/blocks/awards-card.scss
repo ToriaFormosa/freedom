@@ -1,0 +1,96 @@
+.awards-card {
+	padding: 40px;
+	background-color: $white;
+	box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
+
+	@include max(md) {
+		padding: 30px;
+	}
+
+	&__icon-top {
+		width: 101px;
+		height: 96px;
+		margin-bottom: 20px;
+
+		@include max(md) {
+			width: 74px;
+			height: 70px;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__icon-bottom {
+		display: inline-block;
+		position: relative;
+
+		@include max(md) {
+			margin-top: auto;
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			width: 64px;
+			height: 60px;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='65' height='60' viewBox='0 0 65 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath opacity='0.05' d='M64.5398 31.4943L54.5565 29.8851C54.5565 20.4598 56.1817 12.4138 60.1286 4.13793L50.6097 0C42.2516 11.7241 38.0726 24.3678 38.0726 39.0805V60H64.5398V31.4943ZM27.1607 31.4943L17.1775 29.8851C17.1775 20.4598 18.8027 12.4138 22.7495 4.13793L13.2307 0C4.87262 11.7241 0.693604 24.3678 0.693604 39.0805V60H27.1607V31.4943Z' fill='black'/%3e%3c/svg%3e ");
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: -6px;
+			right: -55px;
+
+			@include max(md) {
+				width: 44px;
+				height: 41px;
+				right: 44px;
+			}
+		}
+
+		&--reviewer-1 {
+			svg {
+				@include max(md) {
+					max-width: 60%;
+				}
+			}
+		}
+
+		&--reviewer-2 {
+			svg {
+				@include max(md) {
+					max-width: 50%;
+				}
+			}
+		}
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 29px;
+		font-weight: 500;
+		margin-bottom: 26px;
+
+		@include max(md) {
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: 22px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 20px;
+
+		@include max(md) {
+			margin-bottom: 24px;
+		}
+
+		span {
+			font-weight: 500;
+		}
+	}
+}

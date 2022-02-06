@@ -1,0 +1,15 @@
+mixin advantages-section(className, title, text, btn, image, stats)
+	.advantages-section(class=className)
+		.container
+			+title-block(title, text)
+			if stats
+				.advantages-section__stats
+					each item in stats
+						.advantages-section__stats-item
+							p!= item.num
+							p!= item.text
+			+button(btn.text, 'advantages-section__btn', '', btn.url)
+			.advantages-section__image
+				picture
+					source(media='(min-width: 1200px)', srcset=`images/banner/${image}.png, images/banner/${image}@2x.png 2x`)
+					img(src=`images/banner/${image}-small.png`, srcset=`images/banner/${image}-small@2x.png 2x`)

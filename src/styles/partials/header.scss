@@ -1,0 +1,147 @@
+.header {
+	&__top {
+		background-color: $gray-f8;
+		border-bottom: 1px solid $gray-e5;
+	}
+
+	&__bottom {
+		border-bottom: 1px solid $gray-e5;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 20px 15px;
+
+		@include max(md) {
+			padding: 21px 30px;
+		}
+
+		@include max(sm) {
+			padding: 22px 20px;
+		}
+
+		&--menu {
+			padding: 19px 15px;
+		}
+	}
+
+	&__logo {
+		width: 200px;
+		height: 35px;
+		margin-right: 70px;
+
+		@include max(md) {
+			width: 125px;
+			height: 22px;
+		}
+
+		@include max(sm) {
+			width: 200px;
+			height: 35px;
+			margin-right: 15px;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__auth {
+		display: flex;
+		align-items: center;
+		border-left: 1px solid $gray-e5;
+		border-right: 1px solid $gray-e5;
+		padding: 0 20px;
+		margin: 0 20px;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__btn {
+		width: 90px;
+	}
+
+	&__signup {
+		margin-right: 20px;
+	}
+
+	&__cart {
+		@include max(md) {
+			margin-left: auto;
+		}
+
+		@include hover {
+			svg {
+				opacity: 0.8;
+			}
+
+			span {
+				opacity: 0.8;
+			}
+		}
+
+		svg {
+			transition: opacity 0.3s ease;
+		}
+
+		figure {
+			display: flex;
+			align-items: center;
+		}
+
+		span {
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 500;
+			color: $black;
+			padding-left: 10px;
+			transition: opacity 0.3s ease;
+
+			@include max(md) {
+				display: none;
+			}
+		}
+	}
+
+	&__cart-icon {
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}
+
+	&__indicator {
+		top: -7px;
+		right: -8px;
+	}
+
+	&__lang-switcher {
+		margin-left: 84.5px;
+	}
+
+	&__burger {
+		display: none;
+		width: 20px;
+		height: 17px;
+		position: relative;
+
+		@include max(md) {
+			display: block;
+			margin-left: 25px;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

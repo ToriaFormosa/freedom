@@ -1,0 +1,64 @@
+.brands {
+	padding: 70px 0;
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		margin: 0 -27.5px;
+
+		@include max(md) {
+			margin: 0 -50px;
+		}
+
+		@include max(sm) {
+			margin: 0 -30px;
+		}
+
+		img {
+			margin: 0 27.5px;
+
+			@include max(md) {
+				margin: 0 50px 20px;
+			}
+
+			@include max(sm) {
+				margin: 0 30px 20px;
+			}
+
+			&.brand-2 {
+				@include max(md) {
+					width: 96px;
+					height: 34px;
+					order: 1;
+				}
+			}
+
+			&.brand-3 {
+				@include max(md) {
+					width: 184px;
+					height: 18px;
+				}
+
+				@include max(sm) {
+					order: 4;
+				}
+			}
+
+			&.brand-4 {
+				@include max(md) {
+					width: 104px;
+					height: 26px;
+					order: 2;
+				}
+			}
+
+			&.brand-5 {
+				@include max(sm) {
+					order: 3;
+				}
+			}
+		}
+	}
+}

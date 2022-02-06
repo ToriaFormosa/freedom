@@ -1,0 +1,118 @@
+.first-screen {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F3F7F9 100%);
+	padding: 155px 0 140px;
+
+	@include max(md) {
+		padding: 44px 0 174px;
+	}
+
+	@include max(sm) {
+		padding: 40px 0 0;
+	}
+
+	&__title-block {
+		margin-bottom: 40px;
+
+		@include max(md) {
+			margin-bottom: 20px;
+		}
+
+		@include max(sm) {
+			text-align: center;
+		}
+
+		h2 {
+			max-width: 730px;
+		}
+
+		p {
+			max-width: 700px;
+
+			@include max(md) {
+				max-width: 415px;
+			}
+
+			@include max(sm) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&__btn {
+		max-width: 280px;
+		margin-bottom: 40px;
+
+		@include max(md) {
+			max-width: 300px;
+			margin-bottom: 0;
+		}
+
+		@include max(sm) {
+			max-width: 100%;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__awards {
+		display: flex;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+
+	&__awards-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-left: 10px;
+
+		&:not(:last-child) {
+			margin-right: 30px;
+
+			@include max(sm) {
+				margin-right: 60px;
+			}
+		}
+
+		img {
+			margin-bottom: 15px;
+		}
+
+		span {
+			font-family: $robotoFont;
+			font-size: 13px;
+		}
+	}
+
+	&__image {
+		position: absolute;
+		bottom: -140px;
+		right: -30px;
+
+		@include max(md) {
+			bottom: -174px;
+			right: 40px;
+		}
+
+		@include max(sm) {
+			width: calc(100% + 48px);
+			margin: 0 -24px;
+			position: relative;
+			bottom: unset;
+			right: unset;
+		}
+
+		img {
+			@include max(md) {
+				width: 60%;
+				margin-left: auto;
+			}
+
+			@include max(sm) {
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
+}

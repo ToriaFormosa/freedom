@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'FFGoodPro';
+	src: local('FFGoodPro-Light');
+	src: url('../fonts/FFGoodPro-Light.eot');
+	src: url('../fonts/FFGoodPro-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FFGoodPro-Light.ttf') format('truetype'),
+	url('../fonts/FFGoodPro-Light.woff') format('woff'),
+	url('../fonts/FFGoodPro-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FFGoodPro';
+	src: local('FFGoodPro-LightItalic');
+	src: url('../fonts/FFGoodPro-LightItalic.eot');
+	src: url('../fonts/FFGoodPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FFGoodPro-LightItalic.ttf') format('truetype'),
+	url('../fonts/FFGoodPro-LightItalic.woff') format('woff'),
+	url('../fonts/FFGoodPro-LightItalic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FFGoodPro';
+	src: local('FFGoodPro-Regular');
+	src: url('../fonts/FFGoodPro-Regular.eot');
+	src: url('../fonts/FFGoodPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FFGoodPro-Regular.ttf') format('truetype'),
+	url('../fonts/FFGoodPro-Regular.woff') format('woff'),
+	url('../fonts/FFGoodPro-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FFGoodPro';
+	src: local('FFGoodPro-Italic');
+	src: url('../fonts/FFGoodPro-Italic.eot');
+	src: url('../fonts/FFGoodPro-Italic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FFGoodPro-Italic.ttf') format('truetype'),
+	url('../fonts/FFGoodPro-Italic.woff') format('woff'),
+	url('../fonts/FFGoodPro-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FFGoodPro';
+	src: local('FFGoodPro-Medium');
+	src: url('../fonts/FFGoodPro-Medium.eot');
+	src: url('../fonts/FFGoodPro-Medium.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FFGoodPro-Medium.ttf') format('truetype'),
+	url('../fonts/FFGoodPro-Medium.woff') format('woff'),
+	url('../fonts/FFGoodPro-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FFGoodPro';
+	src: local('FFGoodPro-MediumItalic');
+	src: url('../fonts/FFGoodPro-MediumItalic.eot');
+	src: url('../fonts/FFGoodPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/FFGoodPro-MediumItalic.ttf') format('truetype'),
+	url('../fonts/FFGoodPro-MediumItalic.woff') format('woff'),
+	url('../fonts/FFGoodPro-MediumItalic.woff2') format('woff2');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'),
+	url('../fonts/Roboto.ttf') format('truetype');
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto-Italic'),
+	url('../fonts/Roboto-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}

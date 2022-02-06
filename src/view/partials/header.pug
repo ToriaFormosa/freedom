@@ -1,0 +1,28 @@
+header.header(class= headerClass ? headerClass : '')
+	.header__top
+		.container.header__container
+			a.header__logo(href='#', target='_blank')
+				+icon('logo')
+			include ../blocks/search-block.pug
+			.header__auth
+				+button('Sign Up', 'button--small header__btn header__signup', '', '#')
+				+button('Login', 'button--small button--empty header__btn', '', '#')
+			a.header__cart(href='#')
+				figure
+					.header__cart-icon
+						+icon('cart')(width='20', height='20')
+						+indicator('3', 'header__indicator')
+					span Cart
+			.header__burger
+				+icon('burger')
+				+indicator('3', 'header__indicator')
+	.header__bottom
+		.container.header__container.header__container--menu
+			include ../partials/menu.pug
+			.lang-switcher.header__lang-switcher
+				.lang-switcher__wrapper
+					+icon('flag')(width='24', height='18', class='lang-switcher__flag')
+					select
+						option(value='flag') English
+						option(value='flag') Russian
+					+icon('chevron')(width='10', height='6', class='lang-switcher__arrow')

@@ -1,0 +1,17 @@
+.footer {
+	background-color: $gray-f0f2;
+
+	@include max(md) {
+		padding-top: 128px;
+	}
+
+	img {
+		max-width: 1680px;
+		width: 100%;
+		margin: 0 auto;
+
+		@include max(md) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.account {
+	padding: 70px 0;
+
+	@include max(md) {
+		padding: 20px 0;
+	}
+
+	@include max(sm) {
+		padding: 50px 0;
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include max(md) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__image {
+		padding-left: 98px;
+
+		@include max(md) {
+			width: 55.5%;
+			padding-left: 0;
+			margin-bottom: 42px;
+		}
+
+		@include max(sm) {
+			width: 100%;
+		}
+	}
+
+	&__content {
+		max-width: 510px;
+		margin-left: 100px;
+
+		@include max(md) {
+			max-width: 100%;
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+	&__title-block {
+		margin-bottom: 70px;
+
+		@include max(md) {
+			margin-bottom: 14px;
+		}
+	}
+
+	&__btn {
+		max-width: 330px;
+
+		@include max(md) {
+			max-width: 320px;
+		}
+	}
+}

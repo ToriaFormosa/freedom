@@ -1,0 +1,82 @@
+.awards {
+	padding-top: 140px;
+	background-color: $gray-f8;
+
+	@include max(md) {
+		padding-top: 70px;
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 48px;
+
+		@include max(md) {
+			font-size: 24px;
+			line-height: 28px;
+			text-align: left;
+			padding: 0 24px;
+			margin-bottom: 20px;
+		}
+
+		@include max(sm) {
+			padding: 0;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		line-height: 28px;
+		text-align: center;
+		margin-bottom: -14px;
+
+		@include max(md) {
+			font-size: 16px;
+			line-height: 24px;
+			text-align: left;
+			padding: 0 24px;
+			margin-bottom: -96px;
+		}
+
+		@include max(sm) {
+			padding: 0;
+		}
+	}
+
+	&__slider {
+		display: flex;
+		position: relative;
+		bottom: -94px;
+		margin: 0 -20px;
+
+		@include max(md) {
+			bottom: -136px;
+			margin: 0 -10px;
+		}
+
+		@include max(sm) {
+			width: calc(100% + 48px);
+			margin: 0 -24px;
+			padding: 30px 0 30px 24px;
+			bottom: -105px;
+		}
+	}
+
+	&__slide {
+		width: calc(50% - 40px);
+		margin: 0 20px;
+
+		@include max(md) {
+			display: flex;
+			flex-direction: column;
+			width: calc(50% - 20px);
+			margin: 0 10px;
+		}
+
+		@include max(sm) {
+			margin: 0;
+		}
+	}
+}

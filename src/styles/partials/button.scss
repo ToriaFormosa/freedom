@@ -1,0 +1,51 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 600px;
+	width: 100%;
+	padding: 14px 10px;
+	font-size: 18px;
+	line-height: 28px;
+	border-radius: 3px;
+	background-color: $pear;
+	color: $white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+
+	@include hover {
+		background-color: rgba($pear, 0.8);
+	}
+
+	&--light {
+		background-color: $pistachio;
+
+		@include hover {
+			background-color: rgba($pistachio, 0.8);
+		}
+
+		svg {
+			fill: $pear;
+		}
+	}
+
+	&--empty {
+		background-color: transparent;
+		color: $pear;
+
+		@include hover {
+			background-color: transparent;
+			text-decoration: underline;
+		}
+	}
+
+	&--small {
+		padding: 12px 10px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	&--large {
+		padding: 18px 10px;
+	}
+}

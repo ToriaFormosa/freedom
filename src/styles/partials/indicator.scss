@@ -1,0 +1,13 @@
+.indicator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 14px;
+	height: 14px;
+	background-color: $red;
+	border-radius: 50%;
+	font-size: 8px;
+	line-height: 8px;
+	color: $white;
+	position: absolute;
+}

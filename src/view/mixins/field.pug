@@ -1,0 +1,10 @@
+mixin field(fieldType, type, fieldName, className, placeholder, icon)
+	label.field(class=className)
+		case fieldType
+			when 'input'
+				input(type=type, name=fieldName, placeholder=placeholder)&attributes(attributes)
+			when 'textarea'
+				textarea(name=fieldName, placeholder=placeholder)
+		if icon
+			a(href='#', class='field__pass-switcher')
+		.field-error

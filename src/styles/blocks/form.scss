@@ -1,0 +1,65 @@
+.form {
+	$parent: &;
+
+	width: 100%;
+	padding: 74px 0 144px;
+
+	@include max(md) {
+		padding: 70px 0;
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: 36px;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 40px;
+
+		@include max(md) {
+			font-size: 24px;
+			line-height: 28px;
+		}
+	}
+
+	form {
+		max-width: 600px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	&__field {
+		margin-bottom: 20px;
+
+		&--height {
+			input {
+				height: 56px;
+			}
+		}
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 -12px;
+
+		@include max(sm) {
+			flex-direction: column;
+			margin: 0;
+		}
+
+		#{$parent} {
+			&__field {
+				width: calc(50% - 24px);
+				margin: 0 12px 50px;
+
+				@include max(sm) {
+					width: 100%;
+					margin: 0 0 50px;
+				}
+			}
+		}
+	}
+
+	&__submit {
+		margin-top: 40px;
+	}
+}

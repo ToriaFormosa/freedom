@@ -1,0 +1,52 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	input {
+		display: none;
+
+		&:checked + b::before {
+			display: block;
+		}
+	}
+
+	b {
+		display: block;
+		width: 24px;
+		height: 24px;
+		border: 1px solid $gray-cc;
+		border-radius: 3px;
+		background-color: $white;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: none;
+			width: 30px;
+			height: 30px;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2372bf44' width='405.272px' height='405.272px' viewBox='0 0 405.272 405.272'%3e%3cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'/%3e%3c/svg%3e ");			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	span {
+		font-size: 14px;
+		line-height: 20px;
+		padding-left: 15px;
+
+		a {
+			color: $pear;
+			font-weight: 500;
+
+			@include hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+section.account
+	.container.account__container
+		.account__image
+			img(src='images/banner/2.png', srcset='images/banner/2@2x.png 2x', alt='')
+		.account__content
+			+title-block('Быстро и удобно',
+				'Откройте брокерский счет за 10 минут. <br>' +
+				'Пополняйте с банковской карты моментально. <br>' +
+				'Совершайте инвестиции за пару кликов.',
+				'title-block--text-spacing account__title-block')
+			+button('Открыть счет', 'account__btn', '', '#')

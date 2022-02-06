@@ -1,0 +1,189 @@
+.advantages-section {
+	$parent: &;
+
+	padding: 70px 0;
+	overflow: hidden;
+
+	@include max(md) {
+		border-bottom: 1px solid $gray-f0;
+	}
+
+	.title-block {
+		h2 {
+			max-width: 735px;
+
+			span.swap-2 {
+				@include max(md) {
+					color: $black;
+				}
+			}
+		}
+
+		p {
+			max-width: 580px;
+		}
+	}
+
+	&__image {
+		position: absolute;
+		right: 0;
+
+		@include max(md) {
+			position: relative;
+			right: unset;
+			margin-left: -40px;
+		}
+
+		@include max(sm) {
+			width: calc(100% + 110px);
+			margin-left: -24px;
+		}
+	}
+
+	&__stats {
+		display: flex;
+		margin-top: 40px;
+
+		@include max(md) {
+			margin-top: 20px;
+		}
+	}
+
+	&__btn {
+		max-width: 330px;
+		margin-top: 40px;
+
+		@include max(md) {
+			max-width: 200px;
+			margin-top: 20px;
+			padding: 11px 10px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__stats-item {
+		&:not(:last-child) {
+			margin-right: 70px;
+
+			@include max(md) {
+				margin-right: 40px;
+			}
+		}
+
+		p {
+			&:first-child {
+				font-size: 60px;
+				line-height: 77px;
+				font-weight: 300;
+				color: $pear;
+				letter-spacing: -0.03em;
+
+				@include max(md) {
+					font-size: 30px;
+					line-height: 36px;
+				}
+			}
+
+			&:last-child {
+				font-size: 18px;
+				line-height: 28px;
+				color: $gray-99;
+
+				@include max(md) {
+					font-size: 12px;
+					line-height: 14px;
+					margin-top: 3px;
+				}
+			}
+		}
+	}
+
+	&--ipo {
+		padding-bottom: 469px;
+
+		@include max(md) {
+			padding: 161px 0 0;
+		}
+
+		@include max(sm) {
+			padding: 90px 0 0;
+		}
+
+		#{$parent} {
+			&__image {
+				bottom: -397px;
+
+				@include max(md) {
+					bottom: 0;
+				}
+			}
+		}
+	}
+
+	&--invest {
+		padding-bottom: 469px;
+
+		@include max(md) {
+			padding: 70px 0 0;
+		}
+
+		#{$parent} {
+			&__image {
+				bottom: -397px;
+
+				@include max(md) {
+					bottom: 0;
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+
+	&--deposit {
+		padding-bottom: 495px;
+
+		@include max(md) {
+			padding: 70px 0 0;
+		}
+
+		@include max(sm) {
+			padding: 70px 0 17px;
+		}
+
+		#{$parent} {
+			&__image {
+				bottom: -425px;
+
+				@include max(md) {
+					bottom: 0;
+				}
+
+				@include max(sm) {
+					bottom: -17px;
+				}
+			}
+		}
+	}
+
+	&--app {
+		padding-bottom: 300px;
+
+		@include max(md) {
+			padding: 70px 0 0;
+		}
+
+		@include max(sm) {
+			padding: 70px 0;
+		}
+
+		#{$parent} {
+			&__image {
+				bottom: -447px;
+
+				@include max(md) {
+					bottom: 0;
+				}
+			}
+		}
+	}
+}

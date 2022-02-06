@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet" type="text/css">
+    <title>Freedom24 | Main</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__container"><a class="header__logo" href="#" target="_blank">
+            <svg>
+              <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg></a>
+          <form class="search-block" action="" method="POST">
+            <label class="field field--small search-block__field">
+              <input type="search" name="search" placeholder="Search...">
+              <div class="field-error"></div>
+            </label>
+            <button class="button button--small button--light search-block__submit" type="submit">
+              <svg>
+                <use xlink:href="./images/sprite.svg#lupa"></use>
+              </svg>
+            </button>
+          </form>
+          <div class="header__auth"><a class="button button--small header__btn header__signup" href="#"><span>Sign Up</span></a><a class="button button--small button--empty header__btn" href="#"><span>Login</span></a>
+          </div><a class="header__cart" href="#">
+            <figure>
+              <div class="header__cart-icon">
+                <svg width="20" height="20">
+                  <use xlink:href="./images/sprite.svg#cart"></use>
+                </svg>
+                <div class="indicator header__indicator">3</div>
+              </div><span>Cart</span>
+            </figure></a>
+          <div class="header__burger">
+            <svg>
+              <use xlink:href="./images/sprite.svg#burger"></use>
+            </svg>
+            <div class="indicator header__indicator">3</div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container header__container header__container--menu">
+          <nav class="menu">
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">IPO</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Service Plans</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">InvestIdeas</a></li>
+            <li><a href="#">FAQ</a></li>
+          </nav>
+          <div class="lang-switcher header__lang-switcher">
+            <div class="lang-switcher__wrapper">
+              <svg class="lang-switcher__flag" width="24" height="18">
+                <use xlink:href="./images/sprite.svg#flag"></use>
+              </svg>
+              <select>
+                <option value="flag">English</option>
+                <option value="flag">Russian</option>
+              </select>
+              <svg class="lang-switcher__arrow" width="10" height="6">
+                <use xlink:href="./images/sprite.svg#chevron"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="first-screen">
+        <div class="container">
+          <div class="title-block first-screen__title-block">
+            <h2>Инвестиции для каждого</h2>
+            <p>Инвестируйте в акции, ETF и облигации без комиссий. Участвуйте в IPO и приумножайте сбережения на накопительном D-счете. <br class="mob">Заставьте свои деньги зарабатывать!</p>
+          </div><a class="button first-screen__btn" href="#"><span>Открыть счет</span></a>
+          <div class="first-screen__awards">
+            <div class="first-screen__awards-item"><img src="images/awards/1.png" srcset="images/awards/1@2x.png 2x" alt=""><span>Листинг на бирже Nasdaq</span></div>
+            <div class="first-screen__awards-item"><img src="images/awards/2.png" srcset="images/awards/2@2x.png 2x" alt=""><span>Рейтинг B. Стабильный прогноз</span></div>
+          </div>
+          <div class="first-screen__image"><img src="images/banner/1.png" srcset="images/banner/1@2x.png 2x" alt=""></div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="container">
+          <div class="brands__wrapper"><img class="brand-1" src="images/brands/1.png" srcset="images/brands/1@2x.png 2x" alt=""><img class="brand-2" src="images/brands/2.png" srcset="images/brands/2@2x.png 2x" alt=""><img class="brand-3" src="images/brands/3.png" srcset="images/brands/3@2x.png 2x" alt=""><img class="brand-4" src="images/brands/4.png" srcset="images/brands/4@2x.png 2x" alt=""><img class="brand-5" src="images/brands/5.png" srcset="images/brands/5@2x.png 2x" alt=""></div>
+        </div>
+      </section>
+      <section class="account">
+        <div class="container account__container">
+          <div class="account__image"><img src="images/banner/2.png" srcset="images/banner/2@2x.png 2x" alt=""></div>
+          <div class="account__content">
+            <div class="title-block title-block--text-spacing account__title-block">
+              <h2>Быстро и удобно</h2>
+              <p>Откройте брокерский счет за 10 минут. <br>Пополняйте с банковской карты моментально. <br>Совершайте инвестиции за пару кликов.</p>
+            </div><a class="button account__btn" href="#"><span>Открыть счет</span></a>
+          </div>
+        </div>
+      </section>
+      <div class="advantages-section advantages-section--ipo">
+        <div class="container">
+          <div class="title-block">
+            <h2><span class="swap-1">Участвуйте</span> <span class="swap-2">Инвестируйте</span> в IPO</h2>
+            <p><span class="swap-1">Инвестируйте в <a href="#" target="_blank">первичное размещение акций</a> (IPO)американских и европейских компаний. Средняя доходность на инвестиции — 70% за 93 дня.</span><span class="swap-2">Покупайте акции по первичной цене до начала торгов. Зарабатывайте на их продаже после листингана бирже и истечения периода Lock UP — цена может вырасти на десятки и даже сотни процентов!</span></p>
+          </div>
+          <div class="advantages-section__stats">
+            <div class="advantages-section__stats-item">
+              <p>206</p>
+              <p>Всего размещений</p>
+            </div>
+            <div class="advantages-section__stats-item">
+              <p>71.26%</p>
+              <p>Средняя прибыль за 3 месяца</p>
+            </div>
+          </div><a class="button advantages-section__btn" href="#"><span>Подробнее о IPO</span></a>
+          <div class="advantages-section__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/banner/3.png, images/banner/3@2x.png 2x"><img src="images/banner/3-small.png" srcset="images/banner/3-small@2x.png 2x">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="advantages-section advantages-section--invest">
+        <div class="container">
+          <div class="title-block">
+            <h2>Инвестируйте в акции и ETF. <br class="desk"> <span>Бесплатно.</span></h2>
+            <p>Совершайте торговые операции с 40 000<span class="swap-1">+</span> ценных бумаг на крупнейших биржах Америки, Европы и Азии. Без комиссии, абонентской платы и скрытых платежей.</p>
+          </div><a class="button advantages-section__btn" href="#"><span><span class='swap-1'>Подробнее</span> <span class='swap-2'>Перейти в каталог</span></span></a>
+          <div class="advantages-section__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/banner/4.png, images/banner/4@2x.png 2x"><img src="images/banner/4-small.png" srcset="images/banner/4-small@2x.png 2x">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="advantages-section advantages-section--deposit">
+        <div class="container">
+          <div class="title-block">
+            <h2>Депозитный счёт. <br> <span>Доход больше, чем в банке.</span></h2>
+            <p><span class="swap-1">Храните доллары под 3% годовых на накопительном <br> D-счете. Доходность начисляется ежедневно.</span><span class="swap-2">При регистрации, помимо инвестиционного счета, вам откроется специальный накопительный D-счет, на который мы будем начислять вам 3% годовых в USD ежедневно.</span></p>
+          </div><a class="button advantages-section__btn" href="#"><span>Подробнее о D-счёте</span></a>
+          <div class="advantages-section__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/banner/5.png, images/banner/5@2x.png 2x"><img src="images/banner/5-small.png" srcset="images/banner/5-small@2x.png 2x">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="advantages-section advantages-section--app">
+        <div class="container">
+          <div class="title-block">
+            <h2>Предложение для эффективных коммуникаторов</h2>
+            <p>Нравится Freedom24? Приглашайте друзей и подписчиков и получайте вознаграждение за их торговую активность. Ваша партнерская программа активируется сразу после открытия счета!</p>
+          </div><a class="button advantages-section__btn" href="#"><span>Открыть счёт</span></a>
+          <div class="advantages-section__image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/banner/6.png, images/banner/6@2x.png 2x"><img src="images/banner/6-small.png" srcset="images/banner/6-small@2x.png 2x">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <section class="awards">
+        <div class="container">
+          <div class="awards__title">Аналитика, отмеченная наградами</div>
+          <div class="awards__text">
+            Куда инвестировать? Прислушайтесь к аналитикам Freedom Finance. <br> Рекомендации по сбалансированным портфелям и прибыльные идеи инвестиций — еженедельно и бесплатно.</div>
+          <div class="awards__slider js-awards-carousel">
+            <div class="swiper-wrapper">
+              <div class="awards-card awards__slide swiper-slide">
+                <div class="awards-card__icon-top">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#award"></use>
+                  </svg>
+                </div>
+                <div class="awards-card__title">"Рекомендации Freedom Finance — лучшие!"</div>
+                <div class="awards-card__text">
+                  Рекомендации по акциям Beyond Meat и Zoom Video заняли <span>1-е место</span> в рейтинге Bloomberg по точности прогноза</div>
+                <div class="awards-card__icon-bottom awards-card__icon-bottom--reviewer-1">
+                  <svg width="184" height="34">
+                    <use xlink:href="./images/sprite.svg#reviewer-1"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="awards-card awards__slide swiper-slide">
+                <div class="awards-card__icon-top">
+                  <svg>
+                    <use xlink:href="./images/sprite.svg#award"></use>
+                  </svg>
+                </div>
+                <div class="awards-card__title">
+                  Аналитический центр Freedom Finance признан лучшим в 2020 году по версии Global Banking & Finance Review</div>
+                <div class="awards-card__text">На премию были номинированы тысячи участников из 100 стран мира</div>
+                <div class="awards-card__icon-bottom awards-card__icon-bottom--reviewer-2">
+                  <svg width="197" height="50">
+                    <use xlink:href="./images/sprite.svg#reviewer-2"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="license">
+        <div class="container">
+          <div class="license__title">Ваши деньги под защитой</div>
+          <div class="license__wrapper">
+            <div class="license__text">
+              Мы — Freedom Finance Europe Ltd, европейская дочка Freedom Holding Corp с капитализацией $3,8 млрд. Единственный европейский брокер с листингом на Nasdaq. Обладаем европейской лицензией и подотчетны
+               трём<span class="swap-1">&nbspрегуляторам (CySEC, BaFin и SEC)</span>. Прозрачны, надежны и открыты для каждого.
+            </div>
+            <div class="license__icon">
+              <svg>
+                <use xlink:href="./images/sprite.svg#logo-license"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container">
+          <div class="form__title">Инвестируйте с одним из самых <br> динамично растущих брокеров Европы!</div>
+          <form class="js-form-validate" action="" method="POST">
+            <label class="field form__field">
+              <input type="email" name="email" placeholder="E-mail (login)" required>
+              <div class="field-error"></div>
+            </label>
+            <label class="field form__field form__field--height js-pass">
+              <input type="password" name="password" placeholder="Password" required><a class="field__pass-switcher" href="#"></a>
+              <div class="field-error"></div>
+            </label>
+            <label class="checkbox form__agreement">
+              <input type="checkbox" name="agreement"><b></b><span>I agree with the processing of my <a href="#" target="_blank">Personal Data</a></span>
+            </label>
+            <!--.form__row
+            +field('input', 'date', 'birthdate', 'form__field', 'Date of birth')
+            +field('input', 'tel', 'phone', 'form__field', 'Phone number')
+            -->
+            <!--+field('textarea', 'text', 'object', 'form__field form__field--textarea', 'Object')-->
+            <!--select.js-select-place.field
+            option
+            option New York
+            option Los Angeles
+            option Chicago
+            option Houston
+            option Phoenix
+            option Philadelphia
+            option San Antonio
+            option San Diego
+            option Dallas
+            option San Jose
+            -->
+            <!--select.js-select-gender.field
+            option
+            option Male
+            option Female
+            -->
+            <button class="button button--large form__submit" type="submit"><span>Открыть счет</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><img src="images/footer.jpg" srcset="images/footer@2x.jpg 2x" alt=""></footer>
+  </body>
+  <script type="module" src="js/main.min.js"></script>
+</html>
